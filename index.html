@@ -32,14 +32,18 @@
             script.setAttribute('id', "oc-start-up");
             script.setAttribute('src', 'https://occhat.elisa.fi/chatstage/Scripts/require.js');
 
-            script.setAttribute('data-oc-service', '39293143-f98b-47bc-8035-07d014d9ba63-100-1CF8B4B5F8588A78E7069649961E4A8DD4D9B4AB');
+            script.setAttribute('data-oc-service', '6f9ed08c-89ed-4d6f-8d4d-9b8e02fd11a0-100-C8BC6510C468FBCC157D55C5E99C15DE2AC90C2B');
             script.setAttribute('data-oc-language', 'fi_FI');
             script.setAttribute('data-main', 'https://occhat.elisa.fi/chatstage/Scripts/oc-chat.js');
             script.setAttribute('data-oc-skip-presurvey', 'false');
             script.setAttribute('data-oc-fullscreen-mode', 'false');
 
-            document.body.appendChild(script);
+        function openZenChat() {
+            var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+            sc.src = ('https:' == document.location.protocol ? 'https://zefzhat.appspot.com' : 'http://www.livezhat.com') + '/code/indagon/50r5zek';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
         };
+
     </script>
     <section id="Homepage">
         
@@ -166,6 +170,7 @@
                                 
                                 <li><a onclick="window.open('https://ocsaas.elisa.fi/video/#/new/37fea5b33682452bbcd155221ec3ec6c/', 'newwindow', 'width=600, height=700'); return false;" class="icoRss"><i class="fa fa-video-camera"></i></a></li>
                                 <li><a href="javascript:openChat()" class="icoRss"><i class="fa fa-comments-o"></i></a></li>
+                                <li><a href="javascript:openZenChat()" class="icoRss"><i class="fa fa-comments-o"></i></a></li>                                
                                 <li><a href="mailto:elisademo.asiakaspalvelu@pkasp.elisa.fi" class="icoRss"><i class="fa fa-envelope-o"></i></a></li>
                                 <li><a href="https://twitter.com/" class="icoRss"><i class="fa fa-twitter"></i></a></li>
                             </ul>
